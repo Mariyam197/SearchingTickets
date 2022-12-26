@@ -5,15 +5,15 @@ public class Ticket implements Comparable<Ticket> {
     private int price;
     private String from;
     private String to;
-    private int time;
+    private int timeInMinutes;
 
 
-    public Ticket(int id, int price, String from, String to, int time) {
+    public Ticket(int id, int price, String from, String to, int timeInMinutes) {
         this.id = id;
         this.price = price;
         this.from = from;
         this.to = to;
-        this.time = time;
+        this.timeInMinutes = timeInMinutes;
     }
 
     public int getId() {
@@ -32,8 +32,8 @@ public class Ticket implements Comparable<Ticket> {
         return to;
     }
 
-    public int getTime() {
-        return time;
+    public int getTimeInMinutes() {
+        return timeInMinutes;
     }
 
 
